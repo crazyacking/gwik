@@ -7,9 +7,9 @@ import (
 
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "Print the version number",
-	Long:  `All software has versions.`,
+	Short: "Print the gwik version number",
+	Long:  `Print the gwik version number`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("gwik\n%s\n", "v1.0.0")
+		fmt.Printf("gwik %s\n", "v1.0.0")
 	},
 }
